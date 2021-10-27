@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.header {
+  padding: 20px 0;
+  background-color: rgb(239 239 234);
+  position: sticky;
+  top: 0;
+}
+
+.wrapper {
+  width: 88%;
+  margin: 0 auto;
+}
+
+.header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #000;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation li {
+  margin-left: 25px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navigation__link:after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.navigation__link:hover {
+  color: gray;
+}
+
+.navigation__link:hover::after {
+  width: 100%;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 56px 0 16px;
+}
+
+.img-wrapper {
+  width: 40%;
+  max-height: 500px;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+p {
+  line-height: 1.4;
+}
+
+.section__title {
+  font-weight: 700;
+}
+
+#about {
+  background-color: #dfddd9;
+}
+
+.section-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-content__wrapper {
+  width: 50%;
+}
+
+#portfolio {
+  color: #fff;
+  background-color: #817f78;
+}
+
+#portfolio .section__link {
+  margin-bottom: 50px;
+  display: inline-block;
+  color: #fff;
+}
+
+.portfolio-list {
+  display: flex;
+  list-style: none;
+  margin: 0 -20px;
+  padding: 0;
+}
+
+.portfolio-list li {
+  width: 50%;
+  height: 400px;
+  margin: 0 20px;
+}
+
+.portfolio-list li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#contacts {
+  background-color: #ccc;
+}
+
+#contacts .section__link {
+  color: #000;
+}
