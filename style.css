@@ -198,7 +198,7 @@ a {
 }
 
 .about-grid__cell p.dot::before {
-  content: ".";
+  content: "";
   position: absolute;
   left: -15px;
   bottom: 7px;
