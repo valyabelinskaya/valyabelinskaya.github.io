@@ -4,123 +4,275 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>VALYA.B - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/css/lightgallery.min.css"
+      integrity="sha512-e/7+n/bcByOQg6+rGt7Bx12Si0rpj4Xfe3EeS3W2RDSGGG/qT9rC7ZQCVAgaVAmZKZisvZ1DqaMd66TzfVO/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header class="header">
       <div class="wrapper">
-        <a href="#" class="logo">LOGO</a>
+        <a href="#" class="logo">VALYA.B</a>
         <ul class="navigation">
-          <li><a href="#about" class="navigation__link">Про мене</a></li>
-          <li><a href="#portfolio" class="navigation__link">Портфоліо</a></li>
-          <li><a href="#contacts" class="navigation__link">Контакти</a></li>
+          <li><a href="#about" class="navigation__link">About me</a></li>
+          <li><a href="#portfolio" class="navigation__link">Portfolio</a></li>
+          <li><a href="#contacts" class="navigation__link">Contacts</a></li>
         </ul>
       </div>
     </header>
 
-    <section id="about" class="section">
-      <div class="wrapper">
-        <h2 class="section__title">Про мене</h2>
-        <div class="section-content">
-          <div class="section-content__wrapper">
-            <p>
-              Мені 19 років і я навчаюсь на третьому курсі графічного дизайну в
-              ЛНАМ. Люблю креатив і створювати щось нове. Також я займаюсь
-              веб-дизайном і мені це подобавється. Я відчуваю, що роблю щось
-              важливе, що кожен веб продукт допомагає тисячам людей отримати
-              безболісно послуги на веб-сервісах або вільно користуватись ними.
-              Також я люблю котиків і перегляд серіалів на Netflix:)
-            </p>
-            <h3 class="section__subtitle">Мої скіли</h3>
-            <ul>
-              <li>Створення дизайну в Figma або AdobeXD</li>
-              <li>User Flow, User Journey Map</li>
-              <li>Створення прототипів</li>
-              <li>Адаптивний дизайн</li>
-              <li>
-                Підготовка макета до поадальшого етапу розробки, створення UI
-                kit
-              </li>
-              <li>Анімація макетів в Figma, Principle</li>
-              <li>Відмальовування іконок, ілюстрацій на сайт</li>
-              <li>Вільне володіння Adobe Photoshop, Adobe Illustrator</li>
-            </ul>
-          </div>
+    <section id="hero" class="section">
+      <div class="about-content">
+        <div class="about-offer">
+          <h6 class="about-offer__subtitle">
+            HI!
+            <img src="./hand.svg" alt="Hand" />
+          </h6>
+          <h1 class="about-offer__title">
+            My name is Valya and I am a web designer
+          </h1>
+        </div>
+      </div>
+      <div class="about-media">
+        <img src="./2020-03-24 16.40.57.jpg" alt="Valya" />
+      </div>
+    </section>
 
-          <div class="img-wrapper">
-            <img src="2020-03-24 16.40.57.jpg" alt="" />
+    <section id="about">
+      <div class="wrapper">
+        <div class="about-grid">
+          <div class="about-grid__cell">
+            <h2 class="about__title">About me.</h2>
+            <p>
+              I am 19 years old and I am studying in the third year of graphic
+              design at LNAM. I love creativity and creating something new. I
+              also do web design and I like it. I feel like I'm doing something
+              important, that every web product helps thousands of people get
+              painless services on web services or use them freely. I also love
+              cats and watching TV series on Netflix :)
+            </p>
+          </div>
+          <div class="about-grid__cell">
+            <h3 class="about__title-second">My skills</h3>
+            <p class="dot">
+              I can create designs in Figma or AdobeXD User Flow, User Journey
+              Map. Also prototyping, adaptive design, preparation of the layout
+              for the next stage of development, creation of UI kit animation of
+              layouts in Figma, Principle
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="portfolio" class="section">
+    <section id="portfolio">
       <div class="wrapper">
-        <h2 class="section__title">Портфоліо</h2>
-        <p>
-          Часто в дизайнерів не вистачає часу на оформлення такого чудового
-          інструменту, як портфоліо і я не виключення:) Нижче прикріпляю пару
-          моїх робіт з посиланнями
-        </p>
-        <a href="#top" class="section__link">На початок</a>
+        <div class="portfolio-grid" id="lightgallery">
+          <a
+            href="https://images.unsplash.com/photo-1631700999566-768cbbcf4671?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+            class="portfolio-grid__item"
+            data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1631700999566-768cbbcf4671?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+              alt="Image"
+            />
+          </a>
+          <a
+            href="https://images.unsplash.com/photo-1633980004717-3475100314bf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80"
+            class="portfolio-grid__item"
+            data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1633980004717-3475100314bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
+              alt="Image"
+            />
+          </a>
+          <a
+            href="https://images.unsplash.com/photo-1634461658840-50f599f76e6a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80"
+            class="portfolio-grid__item"
+            data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1634461658840-50f599f76e6a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80"
+              alt="Image"
+            />
+          </a>
+          <a
+            href="https://images.unsplash.com/photo-1637073503743-1712ea10d797?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            class="portfolio-grid__item"
+            data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1637018445500-38596a0e6473?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80"
+              alt="Image"
+            />
+          </a>
+          <div class="portfolio-grid__item">
+            <h3 class="portfolio__title">Portfolio.</h3>
+          </div>
+          <a
+            href="https://images.unsplash.com/photo-1635369943106-b4c27ec7004c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=689&q=80"
+            class="portfolio-grid__item"
+            data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1635369943106-b4c27ec7004c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=689&q=80"
+              alt="Image"
+            />
+          </a>
+          <a
+            href="https://images.unsplash.com/photo-1635706751517-3858bc90bddf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+            class="portfolio-grid__item"
+            data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1635706751517-3858bc90bddf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              alt="Image"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
 
-        <ul class="portfolio-list">
-          <li>
+    <section id="contacts">
+      <div class="wrapper">
+        <h3 class="contacts__title">Contact me.</h3>
+        <ul class="contacts-list">
+          <li class="contacts-item">
             <a
-              href="https://www.behance.net/gallery/114930099/E-commerce-women-lingerie"
+              href="https://www.behance.net/valya_belinskaya"
               target="_blank"
-              ><img src="Обложка_11.jpg" alt=""
-            /></a>
+              class="contacts-link"
+            >
+              <svg
+                width="41"
+                height="36"
+                viewBox="0 0 41 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.5139 16.6783C18.7774 15.6096 19.959 13.9924 19.959 11.4752C19.959 6.51113 16.2149 5.30176 11.8943 5.30176H0V30.2205H12.2288C16.8128 30.2205 21.1193 28.0479 21.1193 22.9854C21.1193 19.8564 19.6174 17.5432 16.5139 16.6783ZM5.54497 9.55566H10.7483C12.7484 9.55566 14.5493 10.1111 14.5493 12.4033C14.5493 14.5197 13.147 15.3705 11.1682 15.3705H5.54497V9.55566ZM11.4743 25.9877H5.54497V19.1252H11.5882C14.0297 19.1252 15.5743 20.1307 15.5743 22.683C15.5743 25.2002 13.7307 25.9877 11.4743 25.9877ZM36.9925 9.06348H26.7639V6.60957H36.9925V9.06348ZM41 21.4596C41 16.1229 37.8396 11.6721 32.1095 11.6721C26.5432 11.6721 22.7635 15.8064 22.7635 21.2205C22.7635 26.8385 26.3439 30.6916 32.1095 30.6916C36.4729 30.6916 39.2988 28.751 40.6583 24.6236H36.2309C35.754 26.1635 33.7894 26.9791 32.2661 26.9791C29.3264 26.9791 27.7818 25.2775 27.7818 22.3877H40.9573C40.9786 22.0924 41 21.776 41 21.4596ZM27.7889 19.2658C27.9526 16.8963 29.547 15.4127 31.9529 15.4127C34.4727 15.4127 35.7398 16.8752 35.9533 19.2658H27.7889Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
           </li>
-          <li>
-            <a href="https://tsymba.ru" target="_blank"
-              ><img src="oblozhka_.jpg" alt=""
-            /></a>
+          <li class="contacts-item">
+            <a
+              href="https://www.instagram.com/v.design.ui/"
+              target="_blank"
+              class="contacts-link"
+            >
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M29.1723 0H10.8276C4.85717 0 0 4.85717 0 10.8276V29.1726C0 35.1428 4.85717 39.9999 10.8276 39.9999H29.1726C35.1428 39.9999 39.9999 35.1428 39.9999 29.1726V10.8276C39.9999 4.85717 35.1428 0 29.1723 0V0ZM20 30.9371C13.9691 30.9371 9.06279 26.0308 9.06279 20C9.06279 13.9691 13.9691 9.06279 20 9.06279C26.0308 9.06279 30.9371 13.9691 30.9371 20C30.9371 26.0308 26.0308 30.9371 20 30.9371ZM31.1987 11.6421C29.4165 11.6421 27.9669 10.1925 27.9669 8.41032C27.9669 6.6281 29.4165 5.17821 31.1987 5.17821C32.9809 5.17821 34.4308 6.6281 34.4308 8.41032C34.4308 10.1925 32.9809 11.6421 31.1987 11.6421Z"
+                  fill="black"
+                />
+                <path
+                  d="M20 11.4077C15.2624 11.4077 11.4078 15.2621 11.4078 19.9999C11.4078 24.7375 15.2624 28.5921 20 28.5921C24.7378 28.5921 28.5922 24.7375 28.5922 19.9999C28.5922 15.2621 24.7378 11.4077 20 11.4077Z"
+                  fill="black"
+                />
+                <path
+                  d="M31.1987 7.52344C30.7098 7.52344 30.3118 7.92139 30.3118 8.41028C30.3118 8.89917 30.7098 9.29712 31.1987 9.29712C31.6879 9.29712 32.0858 8.89947 32.0858 8.41028C32.0858 7.92108 31.6879 7.52344 31.1987 7.52344Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="contacts-item">
+            <a
+              href="https://dribbble.com/Belinskayaa"
+              target="_blank"
+              class="contacts-link"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.0"
+                width="40.000000pt"
+                height="40.000000pt"
+                viewBox="0 0 40.000000 40.000000"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <g
+                  transform="translate(0.000000,40.000000) scale(0.100000,-0.100000)"
+                  fill="#000000"
+                  stroke="none"
+                >
+                  <path
+                    d="M153 394 c-10 -5 28 -72 68 -118 8 -9 87 33 108 57 10 12 5 19 -23 37 -35 21 -128 36 -153 24z"
+                  />
+                  <path
+                    d="M79 360 c-32 -24 -58 -62 -70 -103 l-8 -30 72 6 c40 3 85 10 100 16 l28 11 -41 60 c-22 33 -44 60 -48 60 -4 0 -19 -9 -33 -20z"
+                  />
+                  <path
+                    d="M321 296 c-18 -13 -45 -29 -61 -36 -25 -10 -27 -15 -19 -34 8 -18 17 -21 48 -18 21 2 54 -1 74 -6 35 -10 37 -9 37 14 0 28 -23 89 -37 97 -6 4 -24 -4 -42 -17z"
+                  />
+                  <path
+                    d="M165 225 c-22 -8 -69 -14 -104 -14 l-64 -1 6 -40 c3 -22 15 -55 27 -75 l22 -35 49 54 c27 30 67 61 89 70 36 14 39 18 30 36 -6 11 -12 20 -13 19 -1 -1 -20 -7 -42 -14z"
+                  />
+                  <path
+                    d="M275 183 c-7 -5 -3 -33 11 -83 l22 -75 36 38 c43 45 61 99 37 108 -30 12 -96 19 -106 12z"
+                  />
+                  <path
+                    d="M163 141 c-22 -16 -51 -44 -63 -62 l-23 -32 21 -18 c28 -22 90 -33 142 -24 46 8 47 11 22 100 -21 73 -39 79 -99 36z"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="contacts-item">
+            <a
+              href="https://www.linkedin.com/in/valya-belinskaya-262708202/"
+              target="_blank"
+              class="contacts-link"
+            >
+              <svg
+                width="40"
+                height="45"
+                viewBox="0 0 40 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.95357 39.3761H0.660714V13.088H8.95357V39.3761ZM4.80268 9.50205C2.15089 9.50205 0 7.33994 0 4.72959C1.89803e-08 3.47574 0.505995 2.27325 1.40667 1.38665C2.30735 0.500042 3.52893 0.00195312 4.80268 0.00195312C6.07643 0.00195312 7.29801 0.500042 8.19868 1.38665C9.09936 2.27325 9.60536 3.47574 9.60536 4.72959C9.60536 7.33994 7.45357 9.50205 4.80268 9.50205ZM39.9911 39.3761H31.7161V26.5792C31.7161 23.5294 31.6536 19.6183 27.4045 19.6183C23.0929 19.6183 22.4321 22.9317 22.4321 26.3595V39.3761H14.1482V13.088H22.1018V16.6739H22.2179C23.325 14.6085 26.0295 12.4288 30.0643 12.4288C38.4571 12.4288 40 17.8692 40 24.9356V39.3761H39.9911Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
     </section>
 
-    <section id="contacts" class="section">
-      <div class="wrapper">
-        <h2 class="section__title">Контакти</h2>
-        <p>
-          Я буду рада обговорити з вами ваш проект, для цього прикріпляю
-          посилання на всі свої соц.мережі. До зустрічі:)
-        </p>
-        <ol>
-          <li>
-            <a href="https://www.behance.net/valya_belinskaya" target="_blank"
-              >Behance</a
-            >
-          </li>
-          <li>
-            <a href="https://www.instagram.com/v.design.ui/" target="_blank"
-              >Instagram</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/valya-belinskaya-262708202/"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </li>
-          <li>
-            <a href="https://dribbble.com/Belinskayaa" target="_blank"
-              >Dribbble</a
-            >
-          </li>
-        </ol>
-        <a href="#top" class="section__link">На початок</a>
-      </div>
-    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/lightgallery.min.js"
+      integrity="sha512-+1CyleTPoFvPO15/CfBZ5h6k/mu/qCQe9uxq1tEfO7SRJ52MnCAQ561bAYkvrsGtnG7AkcvKtVwdeoZc8ps7bQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript">
+      lightGallery(document.getElementById("lightgallery"), {
+        selector: "a.portfolio-grid__item",
+      });
+    </script>
   </body>
 </html>

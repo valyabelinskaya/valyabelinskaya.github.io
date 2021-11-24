@@ -12,17 +12,24 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  color: #000;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
 }
 
 .header {
-  padding: 20px 0;
-  background-color: rgb(239 239 234);
+  padding: 25px 0;
+  background-color: #fff;
   position: sticky;
   top: 0;
+  z-index: 99;
 }
 
 .wrapper {
-  width: 88%;
+  width: 83.3333%;
   margin: 0 auto;
 }
 
@@ -33,7 +40,9 @@ body {
 }
 
 .logo {
-  color: #000;
+  font-size: 20px;
+  line-height: 1.2em;
+  font-weight: 600;
 }
 
 .navigation {
@@ -49,10 +58,11 @@ body {
 }
 
 .navigation__link {
-  text-decoration: none;
-  color: #000;
   transition: color 0.3s ease;
   position: relative;
+  font-size: 18px;
+  line-height: 1.222em;
+  font-weight: 600;
 }
 
 .navigation__link:after {
@@ -91,16 +101,51 @@ body {
   object-position: center;
 }
 
-p {
-  line-height: 1.4;
+.about-offer__subtitle {
+  font-size: 36px;
+  line-height: 1.222em;
+  margin-bottom: 36px;
+  display: block;
+  font-weight: 400;
 }
 
-.section__title {
+.about-offer__title,
+.about__title,
+.portfolio__title,
+.contacts__title {
+  font-size: 72px;
+  line-height: 1.222em;
   font-weight: 700;
+  margin: 0;
 }
 
-#about {
-  background-color: #dfddd9;
+#hero {
+  background-color: #f6f4f4;
+  display: flex;
+  padding: 0;
+  height: 100vh;
+  min-height: unset;
+  max-height: 830px;
+}
+
+.about-content {
+  width: 59.8%;
+  padding: 100px 76px 100px 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.about-media {
+  width: 40.2%;
+  position: relative;
+}
+
+.about-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .section-content {
@@ -108,45 +153,152 @@ p {
   justify-content: space-between;
 }
 
-.section-content__wrapper {
-  width: 50%;
+#about {
+  padding: 145px 0;
+}
+
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-grid__cell:first-child {
+  width: 44.6%;
+}
+
+.about-grid__cell:last-child {
+  width: 42.9%;
+  padding-top: 288px;
+}
+
+.about__title {
+  margin-bottom: 42px;
+}
+
+.about-grid__cell p {
+  font-size: 22px;
+  line-height: 1.409em;
+  margin: 0;
+}
+
+.about-grid__cell:last-child p {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.about__title-second {
+  font-size: 56px;
+  line-height: 1.232em;
+  margin: 0 0 36px 0;
+}
+
+.about-grid__cell p.dot {
+  position: relative;
+}
+
+.about-grid__cell p.dot::before {
+  content: ".";
+  position: absolute;
+  left: -15px;
+  bottom: 7px;
+  transform: translateX(-100%);
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #000;
 }
 
 #portfolio {
-  color: #fff;
-  background-color: #817f78;
+  padding: 93px 0 11px;
+  background-color: #f6f4f4;
 }
 
-#portfolio .section__link {
-  margin-bottom: 50px;
-  display: inline-block;
-  color: #fff;
-}
-
-.portfolio-list {
+.portfolio-grid {
   display: flex;
-  list-style: none;
-  margin: 0 -20px;
-  padding: 0;
+  flex-wrap: wrap;
+  margin: 0 -52px;
 }
 
-.portfolio-list li {
-  width: 50%;
-  height: 400px;
-  margin: 0 20px;
+.portfolio-grid__item {
+  margin: 0 52px;
+  box-sizing: content-box;
+  width: calc(33.333% - 104px);
+  position: relative;
+  margin-bottom: 48px;
 }
 
-.portfolio-list li img {
+.portfolio-grid__item:nth-child(4) {
+  width: 100%;
+}
+
+.portfolio-grid__item::before {
+  content: "";
+  display: block;
+  padding-bottom: 84.9%;
+}
+
+.portfolio-grid__item:nth-child(4)::before {
+  padding-bottom: 23.45%;
+}
+
+.portfolio-grid__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-#contacts {
-  background-color: #ccc;
+.portfolio__title {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-#contacts .section__link {
-  color: #000;
+#contacts {
+  padding: 331px 0;
+}
+
+#contacts .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contacts__title {
+  margin-bottom: 45px;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts-item {
+  margin: 0 50px;
+}
+
+.contacts-link {
+}
+
+.contacts-link svg {
+  width: 40px;
+  height: auto;
+}
+
+.contacts-link svg path {
+  transition: fill 0.4s ease;
+}
+
+.contacts-link:hover svg path {
+  fill: orange;
 }
